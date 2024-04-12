@@ -3,10 +3,10 @@
   "headline": "Загрузчик приложений",
   "extension": "Версия MSX: 1.0.0",
   "version": "1.0.0",
-  "parameter": "content:https://ka6tan.github.io/lampa/msx/start.json",
+  "parameter": "content:{PREFIX}{domain}/msx/start.json",
   "note": "For this service, Media Station X 0.1.120 or higher is needed",
   "action": "[settings:validate_links:0|home]",
-  "dictionary": "https://ka6tan.github.io/lampa/msx/lang/ru.json",
+  "dictionary": "{PREFIX}{domain}/msx/lang/ru.json",
   "pages": [
     {
       "items": [
@@ -19,9 +19,9 @@
         {
           "type": "control",
           "layout": "0,0,5,1",
-          "image": "https://ka6tan.github.io/lampa/msx-logo.png",
+          "image": "{PREFIX}{domain}/msx-logo.png",
           "label": "Lampa",
-          "action": "link:https://ka6tan.github.io/lampa/",
+          "action": "link:{PREFIX}{domain}",
           "selection": {
             "important": true,
             "action": "update:content:description",
@@ -37,7 +37,7 @@
           "layout": "0,1,5,1",
           "image": "http://msx.benzac.de/img/icon_raw.png",
           "label": "FXMLPlayer",
-          "action": "execute:http://v4.msxplayer.ru/msx/get-start-action",
+          "action": "execute:http://msxplayer.ru/msx/get-start-action",
           "selection": {
             "important": true,
             "action": "update:content:description",
@@ -77,11 +77,28 @@
             "important": true,
             "action": "update:content:description",
             "data": {
-              "text": ["{txt:msx-white: OTT-Play} — мультиплатформенный плеер IPTV, доступный на телевизорах, на ТВ-приставках и на мобильных устройствах."
+              "text": [
+                "{txt:msx-white: OTT-Play} — мультиплатформенный плеер IPTV, доступный на телевизорах, на ТВ-приставках и на мобильных устройствах."
+              ]
+            }
+          }
+        },
+        {
+          "type": "control",
+          "layout": "0,4,5,1",
+          "image": "https://ottplayer.es/public/images/logo_temp.svg",
+          "label": "OTTplayer",
+          "action": "link:http://widget.ottplayer.es",
+          "selection": {
+            "important": true,
+            "action": "update:content:description",
+            "data": {
+              "text": ["{txt:msx-white: OTTplayer} — сервис, позволяющий собрать все ваше IP-телевидение в один плейлист, настроить порядок каналов, получить электронный телегид."]
             }
           }
         }
       ]
     }
   ]
+}
 }
