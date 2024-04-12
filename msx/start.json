@@ -37,7 +37,7 @@
           "layout": "0,1,5,1",
           "image": "http://msx.benzac.de/img/icon_raw.png",
           "label": "FXMLPlayer",
-          "action": "execute:http://msxplayer.ru/msx/get-start-action",
+          "action": "execute:http://v4.msxplayer.ru/msx/get-start-action",
           "selection": {
             "important": true,
             "action": "update:content:description",
@@ -64,36 +64,6 @@
               "text": [
                 "{txt:msx-white: ForkPlayer} — это прикладное программное обеспечение для просмотра fxml(Fork eXtensible Markup Language)-страниц в глобальной сети. ForkPlayer используют для запроса, обработки, манипулирования и отображения содержания fxml-сайтов а также для непосредственного просмотра содержания файлов плейлистов (m3u,xml,xspf), изображений (gif, jpeg, png), аудио-видео форматов (mp3, mpeg, mkv), потокового видео (udp, hls)."
               ]
-            }
-          }
-        },
-        {
-          "type": "control",
-          "layout": "0,3,5,1",
-          "image": "http://ott-play.com/android-chrome-192x192.png",
-          "label": "OTT-Play",
-          "action": "link:http://ott-play.com/f/",
-          "selection": {
-            "important": true,
-            "action": "update:content:description",
-            "data": {
-              "text": [
-                "{txt:msx-white: OTT-Play} — мультиплатформенный плеер IPTV, доступный на телевизорах, на ТВ-приставках и на мобильных устройствах."
-              ]
-            }
-          }
-        },
-        {
-          "type": "control",
-          "layout": "0,4,5,1",
-          "image": "https://ottplayer.es/public/images/logo_temp.svg",
-          "label": "OTTplayer",
-          "action": "link:http://widget.ottplayer.es",
-          "selection": {
-            "important": true,
-            "action": "update:content:description",
-            "data": {
-              "text": ["{txt:msx-white: OTTplayer} — сервис, позволяющий собрать все ваше IP-телевидение в один плейлист, настроить порядок каналов, получить электронный телегид."]
             }
           }
         }
