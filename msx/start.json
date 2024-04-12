@@ -79,21 +79,6 @@
             "data": {
               "text": [
                 "{txt:msx-white: OTT-Play} — мультиплатформенный плеер IPTV, доступный на телевизорах, на ТВ-приставках и на мобильных устройствах."
-              ]
-            }
-          }
-        },
-        {
-          "type": "control",
-          "layout": "0,4,5,1",
-          "image": "https://ottplayer.es/public/images/logo_temp.svg",
-          "label": "OTTplayer",
-          "action": "link:http://widget.ottplayer.es",
-          "selection": {
-            "important": true,
-            "action": "update:content:description",
-            "data": {
-              "text": ["{txt:msx-white: OTTplayer} — сервис, позволяющий собрать все ваше IP-телевидение в один плейлист, настроить порядок каналов, получить электронный телегид."]
             }
           }
         }
